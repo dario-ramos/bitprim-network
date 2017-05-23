@@ -29,6 +29,12 @@ if (WITH_LITECOIN)
   add_definitions(-DLITECOIN)
 endif()
 
+# EXTENSION BLOCK NETWORK
+option(WITH_EXTBLK "Compile with Extension blocks support." OFF)
+if (WITH_EXTBLK)
+  add_definitions(-DWITH_EXTBLK)
+endif()
+
 # Check dependencies.
 #==============================================================================
 # Require Boost of at least version 1.56.0 and output ${boost_CPPFLAGS/LDFLAGS}.
