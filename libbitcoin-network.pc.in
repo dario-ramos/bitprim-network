@@ -27,6 +27,7 @@ Version: @PACKAGE_VERSION@
 #------------------------------------------------------------------------------
 Requires: libbitcoin >= 3.0.0
 
+
 # Include directory and any other required compiler flags.
 #------------------------------------------------------------------------------
 Cflags: -I${includedir}
