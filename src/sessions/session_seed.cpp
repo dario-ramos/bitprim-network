@@ -37,7 +37,7 @@ namespace network {
 #define NAME "session_seed"
 
 /// If seeding occurs it must generate an increase of 100 hosts or will fail.
-static const size_t minimum_host_increase = 100;
+static const size_t minimum_host_increase = 1;
 
 using namespace std::placeholders;
 session_seed::session_seed(p2p& network)
