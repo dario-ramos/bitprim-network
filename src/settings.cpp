@@ -105,13 +105,12 @@ settings::settings(config::settings context)
             seeds.push_back({ "testnet-seed.litecointools.com", 19335 });
             seeds.push_back({ "seed-b.litecoin.loshan.co.uk", 19335 });
 #else
-            identifier = 118034699;
+            identifier = 2811197310;
             inbound_port = 18333;
 
-            seeds.reserve(3);
-            seeds.push_back({ "testnet-seed.bitcoin.petertodd.org", 18333 });
-            seeds.push_back({ "testnet-seed.bitcoin.schildbach.de", 18333 });
-            seeds.push_back({ "testnet-seed.bluematt.me", 18333 });
+            seeds.reserve(1);
+            seeds.push_back({ "lbnet-seed.bitprim.org", 18333 });
+
 #endif
           break;
         }
