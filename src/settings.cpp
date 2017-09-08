@@ -86,12 +86,13 @@ settings::settings(config::settings context)
 
             // Seeds based on bitcoinstats.com/network/dns-servers
             seeds.reserve(6);
-            seeds.push_back({ "seed.bitnodes.io", 8333 });
-            seeds.push_back({ "seed.bitcoinstats.com", 8333 });
-            seeds.push_back({ "seed.bitcoin.sipa.be", 8333 });
-            seeds.push_back({ "dnsseed.bluematt.me", 8333 });
-            seeds.push_back({ "seed.bitcoin.jonasschnelli.ch", 8333 });
-            seeds.push_back({ "dnsseed.bitcoin.dashjr.org", 8333 });
+            seeds.push_back({ "seed.bitcoinabc.org", 8333 });
+            seeds.push_back({ "seed-abc.bitcoinforks.org", 8333 });
+            seeds.push_back({ "btccash-seeder.bitcoinunlimited.info", 8333 });
+            seeds.push_back({ "seed.bitprim.org", 8333 });
+            seeds.push_back({ "seed.deadalnix.me", 8333 });
+            seeds.push_back({ "seeder.criptolayer.net", 8333 });
+
 #endif
           break;
         }
@@ -108,10 +109,13 @@ settings::settings(config::settings context)
             identifier = 118034699;
             inbound_port = 18333;
 
-            seeds.reserve(3);
-            seeds.push_back({ "testnet-seed.bitcoin.petertodd.org", 18333 });
-            seeds.push_back({ "testnet-seed.bitcoin.schildbach.de", 18333 });
-            seeds.push_back({ "testnet-seed.bluematt.me", 18333 });
+            seeds.reserve(6);
+            seeds.push_back({ "testnet-seed.bitcoinabc.org", 18333 });
+            seeds.push_back({ "testnet-seed-abc.bitcoinforks.org", 18333 });
+            seeds.push_back({ "testnet-seed.bitcoinunlimited.info", 18333 });
+            seeds.push_back({ "testnet-seed.bitprim.org", 18333 });
+            seeds.push_back({ "testnet-seed.deadalnix.me", 18333 });
+            seeds.push_back({ "testnet-seeder.criptolayer.net", 18333 });
 #endif
           break;
         }
